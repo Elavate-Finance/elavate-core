@@ -41,9 +41,11 @@ module.exports = async function(deployer) {
   const mdexFactoryInstance = await MdexFactory.deployed();
   const mdexFactoryAddress = mdexFactoryInstance.address;
 
-  const initCodeHash = await mdexFactoryInstance.initCodeHash.call();
+  //Only for test purpose, delete this
+  const initCodeHash = await mdexFactoryInstance.initCodeHash.call(); 
   console.log("initCodeHashValue - " + initCodeHash);
-
+  //Only for test purpose, delete this
+  
   // deploy MdexRouter and get deployed address
   await deployer.deploy(MdexRouter, mdexFactoryAddress, wELA);
   const mdexRouterInstance = await MdexRouter.deployed();
