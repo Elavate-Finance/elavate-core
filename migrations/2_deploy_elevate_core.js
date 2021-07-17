@@ -4,10 +4,10 @@ const MdxToken = artifacts.require("MdxToken");
 const TestToken = artifacts.require("TestToken");
 
 const MdexFactory = artifacts.require("MdexFactory");
-const feeToSetter = "0xD42CD52eA4B6f670D00F2B4CcD9AD4754A707ac4";
+const feeToSetter = "0x3A45014f39dB3Ae1C7cba2FF575CEDF35e39A9Ad"; //current deploy Stefan address
 
 const MdexRouter = artifacts.require("MdexRouter");
-const wht = '0x6982D74b1954D766c83E9Fb70eAB08F8d01256DE';
+const wELA = '0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4'; //wrapped ELA token
 
 const HecoPool = artifacts.require("HecoPool");
 const num = 100e18;
@@ -37,7 +37,7 @@ module.exports = async function(deployer) {
   const mdexFactoryAddress = mdexFactoryInstance.address;
 
   // deploy MdexRouter and get deployed address
-  await deployer.deploy(MdexRouter, mdexFactoryAddress, wht);
+  await deployer.deploy(MdexRouter, mdexFactoryAddress, wELA);
   const mdexRouterInstance = await MdexRouter.deployed();
   const mdexRouterAddress = mdexRouterInstance.address;
 

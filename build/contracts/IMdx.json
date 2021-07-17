@@ -209,16 +209,16 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"allowance(address,address)\":{\"details\":\"Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called.\"},\"approve(address,uint256)\":{\"details\":\"Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the amount of tokens owned by `account`.\"},\"totalSupply()\":{\"details\":\"Returns the amount of tokens in existence.\"},\"transfer(address,uint256)\":{\"details\":\"Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/interface/IMdx.sol\":\"IMdx\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/interface/IMdx.sol\":{\"keccak256\":\"0xe27509c44a06a878d0252801023a68afb29e022d0059cdfd35df4fb1d806a4ed\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://dde9c28f9b8709ece55e2744f144341735bf65e4d12a2d4d23c5501dd073f923\",\"dweb:/ipfs/QmQzVq5Vtgm7WbEP2R9x7cjoByGnVPWi2sdYLpzd7bLjcx\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"recipient\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"allowance(address,address)\":{\"details\":\"Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called.\"},\"approve(address,uint256)\":{\"details\":\"Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event.\"},\"balanceOf(address)\":{\"details\":\"Returns the amount of tokens owned by `account`.\"},\"totalSupply()\":{\"details\":\"Returns the amount of tokens in existence.\"},\"transfer(address,uint256)\":{\"details\":\"Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/interface/IMdx.sol\":\"IMdx\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/interface/IMdx.sol\":{\"keccak256\":\"0x75b700788139e04f86bf746742564fece21aa99b91e5fc9887829a3aab5cdd1f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b239f3d1ee0398d3d35c66ab7348a1564150d725464b984b43987b00cfb90037\",\"dweb:/ipfs/QmQvxrhpy3rroAM2RN9mRvAdoQeKZVTxhwrgv9QkTwXpXU\"]},\"@openzeppelin/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08\",\"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\nimport {IERC20 as SIERC20} from \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\n\ninterface IMdx is SIERC20 {\n    function mint(address to, uint256 amount) external returns (bool);\n}\n",
-  "sourcePath": "D:/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/interface/IMdx.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.8.0;\r\n\r\nimport {IERC20 as SIERC20} from \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\r\n\r\ninterface IMdx is SIERC20 {\r\n    function mint(address to, uint256 amount) external returns (bool);\r\n}\r\n",
+  "sourcePath": "D:/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/interface/IMdx.sol",
   "ast": {
-    "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/interface/IMdx.sol",
+    "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/interface/IMdx.sol",
     "exportedSymbols": {
       "IMdx": [
         1520
@@ -240,7 +240,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:32:4"
+        "src": "33:32:4"
       },
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
@@ -249,7 +249,7 @@
         "nodeType": "ImportDirective",
         "scope": 1521,
         "sourceUnit": 2981,
-        "src": "66:81:4",
+        "src": "69:81:4",
         "symbolAliases": [
           {
             "foreign": {
@@ -259,7 +259,7 @@
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
               "referencedDeclaration": null,
-              "src": "74:6:4",
+              "src": "77:6:4",
               "typeDescriptions": {
                 "typeIdentifier": null,
                 "typeString": null
@@ -281,7 +281,7 @@
               "name": "SIERC20",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 2980,
-              "src": "167:7:4",
+              "src": "172:7:4",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_IERC20_$2980",
                 "typeString": "contract IERC20"
@@ -289,7 +289,7 @@
             },
             "id": 1510,
             "nodeType": "InheritanceSpecifier",
-            "src": "167:7:4"
+            "src": "172:7:4"
           }
         ],
         "contractDependencies": [
@@ -329,7 +329,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1519,
-                  "src": "195:10:4",
+                  "src": "201:10:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -340,7 +340,7 @@
                     "id": 1511,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "195:7:4",
+                    "src": "201:7:4",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -358,7 +358,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1519,
-                  "src": "207:14:4",
+                  "src": "213:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -369,7 +369,7 @@
                     "id": 1513,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "207:7:4",
+                    "src": "213:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -379,7 +379,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "194:28:4"
+              "src": "200:28:4"
             },
             "returnParameters": {
               "id": 1518,
@@ -393,7 +393,7 @@
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
                   "scope": 1519,
-                  "src": "241:4:4",
+                  "src": "247:4:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -404,7 +404,7 @@
                     "id": 1516,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "241:4:4",
+                    "src": "247:4:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -414,24 +414,24 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "240:6:4"
+              "src": "246:6:4"
             },
             "scope": 1520,
-            "src": "181:66:4",
+            "src": "187:66:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 1521,
-        "src": "149:100:4"
+        "src": "154:102:4"
       }
     ],
-    "src": "32:218:4"
+    "src": "33:225:4"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/interface/IMdx.sol",
+      "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/interface/IMdx.sol",
       "exportedSymbols": {
         "IMdx": [
           1520
@@ -454,7 +454,7 @@
         },
         "id": 1506,
         "name": "PragmaDirective",
-        "src": "32:32:4"
+        "src": "33:32:4"
       },
       {
         "attributes": {
@@ -476,7 +476,7 @@
                 },
                 "id": 1507,
                 "name": "Identifier",
-                "src": "74:6:4"
+                "src": "77:6:4"
               },
               "local": "SIERC20"
             }
@@ -485,7 +485,7 @@
         },
         "id": 1508,
         "name": "ImportDirective",
-        "src": "66:81:4"
+        "src": "69:81:4"
       },
       {
         "attributes": {
@@ -518,12 +518,12 @@
                 },
                 "id": 1509,
                 "name": "UserDefinedTypeName",
-                "src": "167:7:4"
+                "src": "172:7:4"
               }
             ],
             "id": 1510,
             "name": "InheritanceSpecifier",
-            "src": "167:7:4"
+            "src": "172:7:4"
           },
           {
             "attributes": {
@@ -568,12 +568,12 @@
                         },
                         "id": 1511,
                         "name": "ElementaryTypeName",
-                        "src": "195:7:4"
+                        "src": "201:7:4"
                       }
                     ],
                     "id": 1512,
                     "name": "VariableDeclaration",
-                    "src": "195:10:4"
+                    "src": "201:10:4"
                   },
                   {
                     "attributes": {
@@ -596,17 +596,17 @@
                         },
                         "id": 1513,
                         "name": "ElementaryTypeName",
-                        "src": "207:7:4"
+                        "src": "213:7:4"
                       }
                     ],
                     "id": 1514,
                     "name": "VariableDeclaration",
-                    "src": "207:14:4"
+                    "src": "213:14:4"
                   }
                 ],
                 "id": 1515,
                 "name": "ParameterList",
-                "src": "194:28:4"
+                "src": "200:28:4"
               },
               {
                 "children": [
@@ -631,32 +631,32 @@
                         },
                         "id": 1516,
                         "name": "ElementaryTypeName",
-                        "src": "241:4:4"
+                        "src": "247:4:4"
                       }
                     ],
                     "id": 1517,
                     "name": "VariableDeclaration",
-                    "src": "241:4:4"
+                    "src": "247:4:4"
                   }
                 ],
                 "id": 1518,
                 "name": "ParameterList",
-                "src": "240:6:4"
+                "src": "246:6:4"
               }
             ],
             "id": 1519,
             "name": "FunctionDefinition",
-            "src": "181:66:4"
+            "src": "187:66:4"
           }
         ],
         "id": 1520,
         "name": "ContractDefinition",
-        "src": "149:100:4"
+        "src": "154:102:4"
       }
     ],
     "id": 1521,
     "name": "SourceUnit",
-    "src": "32:218:4"
+    "src": "33:225:4"
   },
   "compiler": {
     "name": "solc",
@@ -664,7 +664,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-16T11:09:17.741Z",
+  "updatedAt": "2021-07-16T22:18:14.322Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

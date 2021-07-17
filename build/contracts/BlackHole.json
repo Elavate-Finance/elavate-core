@@ -1,16 +1,16 @@
 {
   "contractName": "BlackHole",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/assets/BlackHole.sol\":\"BlackHole\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/assets/BlackHole.sol\":{\"keccak256\":\"0xb0c993660074d86c93f796339cede13cd112a765cca9107c21d1567cc9c55f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c881a2d5d24de64d09072e851c1db69f408dc790c5ffa5be000abf261dc6668\",\"dweb:/ipfs/Qmbm37jzjDYjYwuFn1Ht4ghRKCfTBs5GT1pTUi5Tg6HHJc\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122030e9c909e686ef9cf5aa9bb10c4e69a0ec1f89859c5a1df5c20c85ce17314a7964736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052600080fdfea264697066735822122030e9c909e686ef9cf5aa9bb10c4e69a0ec1f89859c5a1df5c20c85ce17314a7964736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol\":\"BlackHole\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol\":{\"keccak256\":\"0xf190dabee0346079d8d9eeab31c53ed8b47af440744da2db93ac79a1b14e744e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6aadf870ee4be3565413e69a65b33298d6eb2a7e40c5a3e1c9934ac16724c6e2\",\"dweb:/ipfs/QmY2LcXMdq6LAW3yziqYbkacY7TDg7TvbeRaq8dNxr95Hx\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e9a8a697390a2c9925fe1028be255688de8bb3a3b34f065ed38fe3395f1bc32764736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e9a8a697390a2c9925fe1028be255688de8bb3a3b34f065ed38fe3395f1bc32764736f6c634300060c0033",
   "immutableReferences": {},
-  "sourceMap": "152:21:4:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "152:21:4:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.8.0;\n\n// This is a black hole contract address\n// no one can transfer MDX from the contract\ncontract BlackHole {}\n\n/*\n    Mdex is an automatic market-making decentralized exchange\n\nbased on the concept of fund pools.It is similar in function\n\nto some DEXs on the market,but on this basis,it proposes and\n\nimplements a dual-chain DEX model based on the Huobi Eco Chain\n\nand Ethereum .It combines the advantages of the low transaction\n\nfees of the Huobi Eco Chain and the prosperity of the Ethereum ecosystem,\n\nand supports the dual mining mechanism of liquidity and transactions.\n\n*/\n",
-  "sourcePath": "D:/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/assets/BlackHole.sol",
+  "sourceMap": "157:21:4:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "157:21:4:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.4.22 <0.8.0;\r\n\r\n// This is a black hole contract address\r\n// no one can transfer MDX from the contract\r\ncontract BlackHole {}\r\n\r\n/*\r\n    Mdex is an automatic market-making decentralized exchange\r\n\r\nbased on the concept of fund pools.It is similar in function\r\n\r\nto some DEXs on the market,but on this basis,it proposes and\r\n\r\nimplements a dual-chain DEX model based on the Huobi Eco Chain\r\n\r\nand Ethereum .It combines the advantages of the low transaction\r\n\r\nfees of the Huobi Eco Chain and the prosperity of the Ethereum ecosystem,\r\n\r\nand supports the dual mining mechanism of liquidity and transactions.\r\n\r\n*/\r\n",
+  "sourcePath": "D:/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol",
   "ast": {
-    "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/assets/BlackHole.sol",
+    "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol",
     "exportedSymbols": {
       "BlackHole": [
         2276
@@ -32,7 +32,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:32:4"
+        "src": "33:32:4"
       },
       {
         "abstract": false,
@@ -49,14 +49,14 @@
         "nodeType": "ContractDefinition",
         "nodes": [],
         "scope": 2277,
-        "src": "152:21:4"
+        "src": "157:21:4"
       }
     ],
-    "src": "32:611:4"
+    "src": "33:633:4"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core-v1/contracts/mdexSwap/assets/BlackHole.sol",
+      "absolutePath": "/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol",
       "exportedSymbols": {
         "BlackHole": [
           2276
@@ -79,7 +79,7 @@
         },
         "id": 2275,
         "name": "PragmaDirective",
-        "src": "32:32:4"
+        "src": "33:32:4"
       },
       {
         "attributes": {
@@ -104,12 +104,12 @@
         },
         "id": 2276,
         "name": "ContractDefinition",
-        "src": "152:21:4"
+        "src": "157:21:4"
       }
     ],
     "id": 2277,
     "name": "SourceUnit",
-    "src": "32:611:4"
+    "src": "33:633:4"
   },
   "compiler": {
     "name": "solc",
@@ -117,7 +117,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-16T11:08:47.104Z",
+  "updatedAt": "2021-07-16T22:16:57.361Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
