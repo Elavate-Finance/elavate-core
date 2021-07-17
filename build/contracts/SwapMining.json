@@ -37837,20 +37837,60 @@
   },
   "networks": {
     "20": {
-      "events": {},
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0xDa3aDBAf00D4BaBD1EcA9b817a44C875f981d23E",
-      "transactionHash": "0x01e8bbbe1fc772b92f31038c55defc4f5b5126c044f418e37929673872a8b6d4"
+      "address": "0x5cC23e85d7b371270C83190D6C2cB730e245e4F5",
+      "transactionHash": "0x3b47a14f38e03185c71aa63220eb0586abfcfeac4aefc436e2ce061663195fe0"
     },
     "5777": {
-      "events": {},
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x3D806909aAF9286DaD4da8b791f9EE7096D1c4aE",
-      "transactionHash": "0xe5f54b33bcb3890afe06cab8658954403975911f663d86ff4079c7648d0c78ff"
+      "address": "0x0B079dedd0565D15c651b222266D568eC4311F30",
+      "transactionHash": "0x82c6384f78075f3325a7be82861ab9fa0f87c9ed288ee7106f6ac856eda21faa"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-16T22:21:17.779Z",
+  "updatedAt": "2021-07-17T12:43:07.705Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

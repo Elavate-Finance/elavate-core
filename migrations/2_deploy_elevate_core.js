@@ -3,6 +3,8 @@ const MdxToken = artifacts.require("MdxToken");
 
 const TestToken = artifacts.require("TestToken");
 
+const MdexPair = artifacts.require("MdexPair");
+
 const MdexFactory = artifacts.require("MdexFactory");
 const feeToSetter = "0x3A45014f39dB3Ae1C7cba2FF575CEDF35e39A9Ad"; //current deploy Stefan address
 
@@ -30,11 +32,17 @@ module.exports = async function(deployer) {
   const testTokenInstance = await TestToken.deployed();
   const testTokenAddress = testTokenInstance.address;
   
+  // deploy mdexPair contract
+  await deployer.deploy(MdexPair);
+
   // deploy a MdexFactory contract
   await deployer.deploy(MdexFactory, feeToSetter);
   //access information about your deployed contract instance
   const mdexFactoryInstance = await MdexFactory.deployed();
   const mdexFactoryAddress = mdexFactoryInstance.address;
+
+  const initCodeHash = await mdexFactoryInstance.initCodeHash.call();
+  console.log("initCodeHashValue - " + initCodeHash);
 
   // deploy MdexRouter and get deployed address
   await deployer.deploy(MdexRouter, mdexFactoryAddress, wELA);
