@@ -391,6 +391,7 @@ contract MdexRouter is IMdexRouter, Ownable {
     // **** SWAP ****
     // requires the initial amount to have already been sent to the first pair
     function _swap(uint[] memory amounts, address[] memory path, address _to) internal virtual {
+        /* TODO - Stefan comented this because gas out when run without solidity optimizer, and cannot debug; this function not needs on this phase
         for (uint i; i < path.length - 1; i++) {
             (address input, address output) = (path[i], path[i + 1]);
             (address token0,) = IMdexFactory(factory).sortTokens(input, output);
@@ -404,6 +405,7 @@ contract MdexRouter is IMdexRouter, Ownable {
                 amount0Out, amount1Out, to, new bytes(0)
             );
         }
+        */
     }
 
     function swapExactTokensForTokens(
@@ -509,6 +511,7 @@ contract MdexRouter is IMdexRouter, Ownable {
     // **** SWAP (supporting fee-on-transfer tokens) ****
     // requires the initial amount to have already been sent to the first pair
     function _swapSupportingFeeOnTransferTokens(address[] memory path, address _to) internal virtual {
+        /* TODO - Stefan comented this because gas out when run without solidity optimizer, and cannot debug; this function not needs on this phase
         for (uint i; i < path.length - 1; i++) {
             (address input, address output) = (path[i], path[i + 1]);
             (address token0,) = IMdexFactory(factory).sortTokens(input, output);
@@ -528,6 +531,7 @@ contract MdexRouter is IMdexRouter, Ownable {
             address to = i < path.length - 2 ? pairFor(output, path[i + 2]) : _to;
             pair.swap(amount0Out, amount1Out, to, new bytes(0));
         }
+        */
     }
 
     function swapExactTokensForTokensSupportingFeeOnTransferTokens(
@@ -537,6 +541,7 @@ contract MdexRouter is IMdexRouter, Ownable {
         address to,
         uint deadline
     ) external virtual override ensure(deadline) {
+        /* TODO - Stefan comented this because gas out when run without solidity optimizer, and cannot debug; this function not needs on this phase
         TransferHelper.safeTransferFrom(
             path[0], msg.sender, pairFor(path[0], path[1]), amountIn
         );
@@ -546,6 +551,7 @@ contract MdexRouter is IMdexRouter, Ownable {
             IERC20(path[path.length - 1]).balanceOf(to).sub(balanceBefore) >= amountOutMin,
             'MdexRouter: INSUFFICIENT_OUTPUT_AMOUNT'
         );
+        */
     }
 
     function swapExactETHForTokensSupportingFeeOnTransferTokens(
@@ -560,6 +566,7 @@ contract MdexRouter is IMdexRouter, Ownable {
     payable
     ensure(deadline)
     {
+        /* TODO - Stefan comented this because gas out when run without solidity optimizer, and cannot debug; this function not needs on this phase
         require(path[0] == WHT, 'MdexRouter: INVALID_PATH');
         uint amountIn = msg.value;
         IWHT(WHT).deposit{value : amountIn}();
@@ -570,6 +577,7 @@ contract MdexRouter is IMdexRouter, Ownable {
             IERC20(path[path.length - 1]).balanceOf(to).sub(balanceBefore) >= amountOutMin,
             'MdexRouter: INSUFFICIENT_OUTPUT_AMOUNT'
         );
+        */
     }
 
     function swapExactTokensForETHSupportingFeeOnTransferTokens(

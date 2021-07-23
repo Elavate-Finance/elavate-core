@@ -1,7 +1,8 @@
 //const Storage = artifacts.require("Storage"); //For testing purpose
 const MdxToken = artifacts.require("MdxToken");
 
-const TestToken = artifacts.require("TestToken");
+const TestTokenOne = artifacts.require("TestTokenOne");
+const TestTokenTwo = artifacts.require("TestTokenTwo");
 
 const MdexPair = artifacts.require("MdexPair");
 
@@ -27,10 +28,15 @@ module.exports = async function(deployer) {
   const mdexTokenInstance = await MdxToken.deployed();
   const mdexTokenAddress = mdexTokenInstance.address;
 
-  // deploy USDTestToken contract and get address
-  await deployer.deploy(TestToken);
-  const testTokenInstance = await TestToken.deployed();
-  const testTokenAddress = testTokenInstance.address;
+  // deploy TestTokenOne contract and get address
+  await deployer.deploy(TestTokenOne);
+  const testTokenOneInstance = await TestTokenOne.deployed();
+  const testTokenOneAddress = testTokenOneInstance.address;
+
+  // deploy TestTokenTwo contract and get address
+  await deployer.deploy(TestTokenTwo);
+  const testTokenTwoInstance = await TestTokenTwo.deployed();
+  const testTokenTwoAddress = testTokenTwoInstance.address;
   
   // deploy mdexPair contract
   await deployer.deploy(MdexPair);
@@ -42,8 +48,8 @@ module.exports = async function(deployer) {
   const mdexFactoryAddress = mdexFactoryInstance.address;
 
   //Only for test purpose, delete this
-  const initCodeHash = await mdexFactoryInstance.initCodeHash.call(); 
-  console.log("initCodeHashValue - " + initCodeHash);
+  //const initCodeHash = await mdexFactoryInstance.initCodeHash.call(); 
+  //console.log("initCodeHashValue - " + initCodeHash);
   //Only for test purpose, delete this
   
   // deploy MdexRouter and get deployed address
@@ -60,5 +66,5 @@ module.exports = async function(deployer) {
   const oracleAddress = oracleInstance.address;
 
   // deploy SwapMining
-  await deployer.deploy(SwapMining, mdexTokenAddress, mdexFactoryAddress, oracleAddress, mdexRouterAddress, testTokenAddress, mdxPerBlock, 0);
+  //await deployer.deploy(SwapMining, mdexTokenAddress, mdexFactoryAddress, oracleAddress, mdexRouterAddress, testTokenAddress, mdxPerBlock, 0);
 }
