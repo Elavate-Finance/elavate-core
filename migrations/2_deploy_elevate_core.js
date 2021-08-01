@@ -3,14 +3,15 @@ const MdxToken = artifacts.require("MdxToken");
 
 const TestTokenOne = artifacts.require("TestTokenOne");
 const TestTokenTwo = artifacts.require("TestTokenTwo");
+const htHUSD = artifacts.require("htHUSD");
 
 const MdexPair = artifacts.require("MdexPair");
 
 const MdexFactory = artifacts.require("MdexFactory");
-const feeToSetter = "0x3A45014f39dB3Ae1C7cba2FF575CEDF35e39A9Ad"; //current deploy Stefan address
+const feeToSetter = "0x9cbe5eb70164394641B869a686884239F53D72DF"; //current deploy Stefan address
 
 const MdexRouter = artifacts.require("MdexRouter");
-const wELA = '0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4'; //wrapped ELA token
+const wELA = "0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4"; //wrapped ELA token
 
 const HecoPool = artifacts.require("HecoPool");
 const num = 100e18;
@@ -21,6 +22,8 @@ const Oracle = artifacts.require("Oracle");
 
 const SwapMining = artifacts.require("SwapMining");
 
+//const hUSD = "0xf9ca2ea3b1024c0db31adb224b407441becc18bb";
+
 module.exports = async function(deployer) {
 
   // deploy MdxToken contract and get address
@@ -30,13 +33,15 @@ module.exports = async function(deployer) {
 
   // deploy TestTokenOne contract and get address
   await deployer.deploy(TestTokenOne);
-  const testTokenOneInstance = await TestTokenOne.deployed();
-  const testTokenOneAddress = testTokenOneInstance.address;
 
   // deploy TestTokenTwo contract and get address
   await deployer.deploy(TestTokenTwo);
-  const testTokenTwoInstance = await TestTokenTwo.deployed();
-  const testTokenTwoAddress = testTokenTwoInstance.address;
+
+  // deploy htHUSD
+  await deployer.deploy(htHUSD);
+  const htHUSDInstance = await htHUSD.deployed();
+  const htHUSDInstanceAddress = htHUSDInstance.address;
+
   
   // deploy mdexPair contract
   await deployer.deploy(MdexPair);
@@ -48,8 +53,8 @@ module.exports = async function(deployer) {
   const mdexFactoryAddress = mdexFactoryInstance.address;
 
   //Only for test purpose, delete this
-  //const initCodeHash = await mdexFactoryInstance.initCodeHash.call(); 
-  //console.log("initCodeHashValue - " + initCodeHash);
+  const initCodeHash = await mdexFactoryInstance.initCodeHash.call(); 
+  console.log("initCodeHashValue - " + initCodeHash);
   //Only for test purpose, delete this
   
   // deploy MdexRouter and get deployed address
@@ -65,6 +70,6 @@ module.exports = async function(deployer) {
   const oracleInstance = await Oracle.deployed();
   const oracleAddress = oracleInstance.address;
 
-  // deploy SwapMining
-  //await deployer.deploy(SwapMining, mdexTokenAddress, mdexFactoryAddress, oracleAddress, mdexRouterAddress, testTokenAddress, mdxPerBlock, 0);
+  //deploy SwapMining
+  await deployer.deploy(SwapMining, mdexTokenAddress, mdexFactoryAddress, oracleAddress, mdexRouterAddress, htHUSDInstanceAddress, mdxPerBlock, 0);
 }

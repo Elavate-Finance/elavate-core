@@ -1,9 +1,9 @@
 {
   "contractName": "BlackHole",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol\":\"BlackHole\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol\":{\"keccak256\":\"0xf190dabee0346079d8d9eeab31c53ed8b47af440744da2db93ac79a1b14e744e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6aadf870ee4be3565413e69a65b33298d6eb2a7e40c5a3e1c9934ac16724c6e2\",\"dweb:/ipfs/QmY2LcXMdq6LAW3yziqYbkacY7TDg7TvbeRaq8dNxr95Hx\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e9a8a697390a2c9925fe1028be255688de8bb3a3b34f065ed38fe3395f1bc32764736f6c634300060c0033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e9a8a697390a2c9925fe1028be255688de8bb3a3b34f065ed38fe3395f1bc32764736f6c634300060c0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol\":\"BlackHole\"},\"evmVersion\":\"constantinople\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":1000},\"remappings\":[]},\"sources\":{\"/D/Posao - Stefan/Stefan - razno/Blockchain/ElavateFinance/elavate-core/contracts/mdexSwap/assets/BlackHole.sol\":{\"keccak256\":\"0xf190dabee0346079d8d9eeab31c53ed8b47af440744da2db93ac79a1b14e744e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6aadf870ee4be3565413e69a65b33298d6eb2a7e40c5a3e1c9934ac16724c6e2\",\"dweb:/ipfs/QmY2LcXMdq6LAW3yziqYbkacY7TDg7TvbeRaq8dNxr95Hx\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212201e78bfe9c86cdb47bb7b768f69cf9b9a011052a7dff61ca270316cbea391e5e264736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212201e78bfe9c86cdb47bb7b768f69cf9b9a011052a7dff61ca270316cbea391e5e264736f6c634300060c0033",
   "immutableReferences": {},
   "sourceMap": "157:21:4:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "157:21:4:-:0;;;;;",
@@ -117,7 +117,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-16T22:16:57.361Z",
+  "updatedAt": "2021-07-30T14:38:38.546Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

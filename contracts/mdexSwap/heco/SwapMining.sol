@@ -158,7 +158,7 @@ contract SwapMining is Ownable {
         if (halvingPeriod == 0) {
             return 0;
         }
-        if (blockNumber > startBlock) {
+        if (blockNumber > startBlock) { //(blockNumber - startBlock - 1) / halvingPeriod (on day 31.07.2021, result is 1)
             return (blockNumber.sub(startBlock).sub(1)).div(halvingPeriod);
         }
         return 0;
@@ -206,6 +206,7 @@ contract SwapMining is Ownable {
 
     function mint(uint256 _pid) public returns (bool) {
         PoolInfo storage pool = poolInfo[_pid];
+        // If current block number less or equal lastRewardBlock
         if (block.number <= pool.lastRewardBlock) {
             return false;
         }
